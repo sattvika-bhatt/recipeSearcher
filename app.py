@@ -11,7 +11,7 @@ def homePage():
 def getIngredients():
     if request.method == 'POST':
         ingredients =request.form['ingredients']
-        apiKey = '6001cdeb6c3e4a9a89749d93aad0f20e'
+        apiKey = ''
         url = f"https://api.spoonacular.com/recipes/complexSearch"
         params = {
             "apiKey": apiKey,
