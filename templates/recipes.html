@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recipes</title>
+</head>
+<body>
+    <h1>Recipes</h1>
+    <ul>
+    {% for recipe in recipes.results %}
+        <li>
+            <h2>{{ recipe.title }}</h2>
+            <img src="{{ recipe.image}}" alt="{{ recipe.title }}">
+            <p><a href="{{ recipe.sourceUrl }}">View Recipe</a></p>
+        </li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
